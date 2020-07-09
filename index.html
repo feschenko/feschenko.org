@@ -43,7 +43,7 @@
                         <p class="shit">-bash: /Users/xcaq/ © 2005-2020</p>
                         <p class="shit">xcaq@macbookpro  ~Socials % ls</p>
                         <p class="shit"><a href="https://t.me/xxcaq" target='_blank'>telegram</a>&#160;&#160;&#160;<a href='https://github.com/xcaq' target='_blank'>github</a>&#160;&#160;&#160;<a href='https://habr.com/en/users/0susboy0/' target='_blank'>habr</a>
-                        <p class="shit"><a href="mailto:swipduces@yandex.com" target='_blank'>email</a>&#160;&#160;&#160;&#160;&#160;&#160;<a href='https://yasobe.ru/na/gothboy' target='_blank'>donate</a></p>
+                        <p class="shit"><a href="mailto:git.xcaq@gmail.com" target='_blank'>email</a>&#160;&#160;&#160;&#160;&#160;&#160;<a href='https://yasobe.ru/na/gothboy' target='_blank'>donate</a></p>
                          <p class="shit">xcaq@macbookpro  ~Socials %
                         <span id="command"></span>
                         <span class="term-caret">&#x2588;</span>
@@ -93,9 +93,9 @@
                     }
                     if (command === 'email') {
                         if (egged) {
-                            window.open("mailto:swipduces@yandex.com");
+                            window.open("mailto:git.xcaq@gmail.com");
                         } else {
-                            window.open("mailto:swipduces@yandex.com");
+                            window.open("mailto:git.xcaq@gmail.com");
                             egged = true;
                         }
                     }
@@ -122,13 +122,6 @@
             
                 function command_parse(a) {
                     if (!dontPrint.includes(a.key)) {
-                        if (blink) {
-                            blink = false;
-                            caret.style.color = '#f4c2c1';
-                        } else {
-                            blink = true;
-                            caret.style.color = '#f0f0f0';
-                        }
                         if (a.key === 'Backspace') {
                             command = command.substring(0, command.length - 1);
                         } else {
