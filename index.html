@@ -8,20 +8,20 @@
         <meta name="author" content="kiryssha">
         <meta name="keywords" content="kiryssha">
         <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+        <script type="text/javascript" >
+           (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+           m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+           (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-   ym(61829548, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true,
-        webvisor:true
-   });
-</script> 
-<noscript><div><img src="https://mc.yandex.ru/watch/61829548" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
+           ym(61829548, "init", {
+                clickmap:true,
+                trackLinks:true,
+                accurateTrackBounce:true,
+                webvisor:true
+           });
+        </script> 
+        <noscript><div><img src="https://mc.yandex.ru/watch/61829548" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+        <!-- /Yandex.Metrika counter -->
     </head>
     <body>
             <div class="loader">
@@ -42,7 +42,7 @@
                         <p class="shit">Last login:  Sat Feb 19 07:36:00 on ttys000</p>
                         <p class="shit">-bash: /Users/xcaq/ © 2005-2020</p>
                         <p class="shit">xcaq@macbookpro  ~Socials % ls</p>
-                        <p class="shit"><a href="https://t.me/xxcaq" target='_blank'>telegram</a>&#160;&#160;&#160;<a href='https://github.com/xcaq' target='_blank'>github</a>&#160;&#160;&#160;<a href='https://habr.com/en/users/0susboy0/' target='_blank'>habr</a>
+                        <p class="shit"><a href="https://t.me/xxcaq" target='_blank'>telegram</a>&#160;&#160;&#160;<a href='https://github.com/xcaq' target='_blank'>github</a>&#160;&#160;&#160;<a href='https://habr.com/en/users/0susboy0/' target='_blank'>habr</a>&#160;&#160;&#160;<a href='https://linkedin.com/in/fka' target='_blank'>linkedin</a>
                         <p class="shit"><a href="mailto:git.xcaq@gmail.com" target='_blank'>email</a>&#160;&#160;&#160;&#160;&#160;&#160;<a href='https://yasobe.ru/na/gothboy' target='_blank'>donate</a></p>
                          <p class="shit">xcaq@macbookpro  ~Socials %
                         <span id="command"></span>
@@ -55,7 +55,6 @@
             <script>
                 let dontPrint = ['Control', 'Alt', 'Shift', 'CapsLock', 'Tab', 'F1', 'F2', 'F3', 'F4', 'F5', 'F6', 'F7', 'F8', 'F9', 'F10', 'F11', 'F12', 'F13', 'BrowserHome', 'ContextMenu', 'ArrowLeft', 'ArrowUp', 'ArrowRight', 'ArrowDown', 'Insert', 'Home', 'PageUp', 'Delete', 'End', 'PageDown', 'ScrollLock', 'Pause', 'Escape', 'OS', 'Meta'];
                 let blink = false;
-                let egged = false;
                 let command = '';
                 let caret = document.getElementsByClassName("term-caret")[0];
                 let tit = document.getElementById("title");
@@ -73,47 +72,21 @@
                     }
                 }
             
-                function eval_cmd() {
-                    if (command === 'github') {
-                        if (egged) {
-                            window.open("https://github.com/xcaq");
-                        } else {
-                            window.open("https://github.com/xcaq");
-                            egged = true;
-                        }
+                function eval_cmd() {         
+                    if (command === 'telegra,') {
+                        window.open("https://t.me/xxcaq");
                     }
-
-                    if (command === 'telegram') {
-                        if (egged) {
-                            window.open("https://t.me/xxcaq");
-                        } else {
-                            window.open("https://t.me/xxcaq");
-                            egged = true;
-                        }
+                    else if (command === 'github') {
+                        window.open("https://github.com/xcaq");
                     }
-                    if (command === 'email') {
-                        if (egged) {
-                            window.open("mailto:git.xcaq@gmail.com");
-                        } else {
-                            window.open("mailto:git.xcaq@gmail.com");
-                            egged = true;
-                        }
+                    else if (command === 'linkedin') {
+                        window.open("http://linkedin.com/in/fka");
                     }
-                    if (command === 'donate') {
-                        if (egged) {
-                            window.open("https://yasobe.ru/na/gothboy");
-                        } else {
-                            window.open("https://yasobe.ru/na/gothboy");
-                            egged = true;
-                        }
+                    else if (command === 'email') {
+                        window.open("mailto:swipduces@yandex.com");
                     }
-                    if (command === 'habr') {
-                        if (egged) {
-                            window.open("https://habr.com/en/users/0susboy0/");
-                        } else {
-                            window.open("https://habr.com/en/users/0susboy0/");
-                            egged = true;
-                        }
+                    else if (command === 'donate') {
+                        window.open("https:/yasobe.ru/na/gothboy");
                     }
                 }
                         
