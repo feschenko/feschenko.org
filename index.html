@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>gothboy.me</title>
+    <link rel="shortcut icon" href="additional/images/favicon.png">
+    <meta name="author" content="Kirill Feschenko">
+    <meta name="keywords" content="kiryssha, gothboy, Kirill Feschenko, Feschenko, xcaq">
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+       (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+       m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+       (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+       ym(61829548, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+       });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/61829548" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    <link rel="stylesheet" href="additional/styles/index.css">
+</head>
+<body>
+    <div id="terminal">
+        <div id="terminal-header">
+            <div class="header-button button-1"></div>
+            <div class="header-button button-2"></div>
+            <div class="header-button button-3"></div>
+            <h1 class="header-title">🏠  xcaq - zsh - 100×20</h1>
+        </div>
+        <div id="terminal-about">
+            <p class="about-text">Last login:  Sat Feb 19 07:36:00 on ttys000</p>
+            <p class="about-text">-bash: /Users/xcaq/ © 2005-2020</p>
+            <p class="about-text">xcaq@macbookpro  ~Socials % ls</p>
+            <div id="terminal-links">
+                <p><a href="https://github.com/xcaq" target="_blank" class="about-link">github</a>&#160;&#160;&#160;
+                <a href="https://t.me/xcaq" target="_blank" class="about-link">telegram</a>&#160;&#160;&#160;
+                <a href="https://linkedin.com/in/fka" target="_blank" class="about-link">linkedin</a></p>
+                <p><a href="https://habr.com/users/0susboy0" target="_blank" class="about-link">habr</a>&#160;&#160;&#160;&#160;&#160;
+                <a href="mailto:swipduces@yandex.com" target="_blank" class="about-link">email</a></p>
+            </div>
+        </div>
+        <p class="command-input">xcaq@macbookpro  ~Socials % <span id="command"></span>
+            <span class="term-caret">&#x2588;</span></p>
+    </div>
+    <script>
+        let dontPrint = ['Control', 'Alt', 'Shift', 'CapsLock', 'Tab', 'F1', 'F2', 'F3', 'F4', 'F5', 'F6', 'F7', 'F8', 'F9', 'F10', 'F11', 'F12', 'F13', 'BrowserHome', 'ContextMenu', 'ArrowLeft', 'ArrowUp', 'ArrowRight', 'ArrowDown', 'Insert', 'Home', 'PageUp', 'Delete', 'End', 'PageDown', 'ScrollLock', 'Pause', 'Escape', 'OS', 'Meta'];
+        let blink = false;
+        let command = '';
+        let caret = document.getElementsByClassName("term-caret")[0];
+        let cmd = document.getElementById("command");
+        document.body.onkeydown = command_parse;
+        function caretToggle() {
+            if (blink) {
+                blink = false;
+                caret.style.color = '#aaa';
+            } else {
+                blink = true;
+                caret.style.color = '#292929';
+            }
+        }
+        function eval_cmd() {
+            if (command === 'telegram') {
+                window.open("https://t.me/xxcaq");
+            }
+            else if (command === 'github') {
+                window.open("https://github.com/xcaq");
+            }
+            else if (command === 'linkedin') {
+                window.open("https://linkedin.com/in/fka");
+            }
+            else if (command === 'email') {
+                window.open("mailto:swipduces@yandex.com");
+            }
+            else if (command === 'donate') {
+                window.open("https://yasobe.ru/na/gothboy");
+            }
+            else if (command === 'habr') {
+                window.open("https://habr.com/en/users/0susboy0");
+            }
+        }
+        function command_parse(a) {
+            if (!dontPrint.includes(a.key)) {
+                if (a.key === 'Backspace') {
+                    command = command.substring(0, command.length - 1);
+                } else {
+                    if (a.key === 'Enter') {
+                        eval_cmd();
+                        command = '';
+                    } else {
+                        command = command + a.key;
+                    }
+                }
+                cmd.textContent = command;
+            }
+        }
+        setInterval(caretToggle, 500);
+    </script>
+</body>
+</html>
