@@ -2,98 +2,78 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>feschenko.org</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="author" content="Kirill Feschenko.">
+    <title>Kirill Feschenko.</title>
     <link rel="shortcut icon" href="additional/images/favicon.png">
-    <meta name="author" content="Kirill Feschenko">
-    <meta name="keywords" content="kiryssha, gothboy, Kirill Feschenko, Feschenko, xcaq">
-    <!-- Yandex.Metrika counter -->
+    <link rel="stylesheet" href="additional/styles/index.css">
     <script type="text/javascript" >
-       (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-       m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-       (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-       ym(61829548, "init", {
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    
+        ym(67505356, "init", {
             clickmap:true,
             trackLinks:true,
-            accurateTrackBounce:true,
-            webvisor:true
-       });
+            accurateTrackBounce:true
+        });
     </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/61829548" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-    <!-- /Yandex.Metrika counter -->
-    <link rel="stylesheet" href="additional/styles/index.css">
+    <noscript><div><img src="https://mc.yandex.ru/watch/67505356" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 </head>
 <body>
-    <div id="terminal">
-        <div id="terminal-header">
-            <div class="header-button button-1"></div>
-            <div class="header-button button-2"></div>
-            <div class="header-button button-3"></div>
-            <h1 class="header-title">🏠  xcaq - zsh - 100×20</h1>
+    <script src="additional/scripts/commandHandler.js"></script>
+    <div id="data__container">
+        <div id="data__container_header">
+            <div id="data__container_header-buttons">
+                <div id="header__button" class="header__button-1"></div>
+                <div id="header__button" class="header__button-2"></div>
+                <div id="header__button" class="header__button-3"></div>
+            </div>
+            <h1 class="header__title_text">🏠&nbsp;&nbsp;Kirill Feschenko – bash – 187×57</h1>
         </div>
-        <div id="terminal-about">
-            <p class="about-text">Last login:  Sat Feb 19 07:36:00 on ttys000</p>
-            <p class="about-text">-bash: /Users/xcaq/ © 2005-2020</p>
-            <p class="about-text">xcaq@macbookpro  ~Socials % ls</p>
-            <div id="terminal-links">
-                <p><a href="https://github.com/xcaq" target="_blank" class="about-link">github</a>&#160;&#160;&#160;
-                <a href="https://t.me/xcaq" target="_blank" class="about-link">telegram</a>&#160;&#160;&#160;
-                <a href="https://linkedin.com/in/fka" target="_blank" class="about-link">linkedin</a></p>
-                <a href="https://habr.com/users/0susboy0" target="_blank" class="about-link">habr</a>&#160;&#160;&#160;&#160;&#160;
-                <a href="https://twitter.com/kiryssha" target="_blank" class="about-link">twitter</a>&#160;&#160;&#160;&#160;
-                <a href="mailto:swipduces@yandex.com" target="_blank" class="about-link">email</a></p>
+        <div id="data__container_body">
+            <div id="data__container_body-caption">
+                <p>Last login:  Sat Feb 19 07:36:00 on ttys000</p>
+                <p>-bash: /Users/feschenko/ © 2005-2020</p>
+                <p>feschenko@macbookpro  ~Socials % ls</p>
+            </div>
+            <div id="data__container_body-links">
+                <p>
+                    <a href="https://github.com/xcaq" target="_blank">
+                        github
+                    </a>
+                    &#160;&#160;&#160;
+                    <a href="https://twitter.com/kiryssha" target="_blank">
+                        twitter
+                    </a>
+                    &#160;&#160;&#160;
+                    <a href="https://t.me/xxcaq" target="_blank">
+                        telegram
+                    </a>
+                </p>
+                <p>
+                    <a href="https://habr.com/users/0susboy0" target="_blank">
+                        habr
+                    </a>
+                    &#160;&#160;&#160;&#160;&#160;
+                    <a href="https://www.linkedin.com/in/fka/" target="_blank">
+                        linkedin
+                    </a>
+                    &#160;&#160;
+                    <a href="mailto:swipduces@yandex.com" target="_blank">
+                        email
+                    </a>
+                </p>
+            </div>
+            <div id="data__container_body-command_handler">
+                <p>
+                    feschenko@macbookpro  ~Socials % open
+                    <span id="commandInput"></span>
+                    <span id="commandCaret">&#x2588;</span>
+                </p>
             </div>
         </div>
-        <p class="command-input">xcaq@macbookpro  ~Socials % open <span id="command"></span>
-            <span class="term-caret">&#x2588;</span></p>
     </div>
-    <script>
-        let dontPrint = ['Control', 'Alt', 'Shift', 'CapsLock', 'Tab', 'F1', 'F2', 'F3', 'F4', 'F5', 'F6', 'F7', 'F8', 'F9', 'F10', 'F11', 'F12', 'F13', 'BrowserHome', 'ContextMenu', 'ArrowLeft', 'ArrowUp', 'ArrowRight', 'ArrowDown', 'Insert', 'Home', 'PageUp', 'Delete', 'End', 'PageDown', 'ScrollLock', 'Pause', 'Escape', 'OS', 'Meta'];
-        let blink = false;
-        let command = '';
-        let caret = document.getElementsByClassName("term-caret")[0];
-        let cmd = document.getElementById("command");
-        document.body.onkeydown = command_parse;
-        function caretToggle() {
-            if (blink) {
-                blink = false;
-                caret.style.color = '#aaa';
-            } else {
-                blink = true;
-                caret.style.color = '#292929';
-            }
-        }
-        function eval_cmd() {
-            if (command === "telegram") {
-                window.open("https://t.me/xxcaq");
-            } else if (command === "github") {
-                window.open("https://github.com/xcaq");
-            } else if (command === "linkedin") {
-                window.open("https://linkedin.com/in/fka");
-            } else if (command === "twitter") {
-                window.open("https://twitter.com/kiryssha");
-            } else if (command === "email") {
-                window.open("mailto:swipduces@yandex.com");
-            } else if (command === "habr") {
-                window.open("https://habr.com/en/users/0susboy0");
-            }
-        }
-        function command_parse(a) {
-            if (!dontPrint.includes(a.key)) {
-                if (a.key === 'Backspace') {
-                    command = command.substring(0, command.length - 1);
-                } else {
-                    if (a.key === 'Enter') {
-                        eval_cmd();
-                        command = '';
-                    } else {
-                        command = command + a.key;
-                    }
-                }
-                cmd.textContent = command;
-            }
-        }
-        setInterval(caretToggle, 500);
-    </script>
 </body>
 </html>
