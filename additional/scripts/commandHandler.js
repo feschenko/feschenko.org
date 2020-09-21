@@ -14,23 +14,17 @@ function toggleCaret() {
 function executeCommand() {
     switch (command.toLowerCase()) {
         case "github":
-            window.open("https://github.com/xcaq");
-            break;
+            return window.open("https://github.com/xcaq");
         case "twitter":
-            window.open("https://twitter.com/kiryssha");
-            break;
+            return window.open("https://twitter.com/kiryssha");
         case "telegram":
-            window.open("https://t.me/xxcaq");
-            break;
+            return window.open("https://t.me/xxcaq");
         case "habr":
-            window.open("https://habr.com/users/0susboy");
-            break;
+            return window.open("https://habr.com/users/0susboy");
         case "linkedin":
-            window.open("https://linkedin.com/in/fka");
-            break;
+            return window.open("https://linkedin.com/in/fka");
         case "email":
-            window.open("mailto:swipduces@yandex.com");
-            break;
+            return window.open("mailto:swipduces@yandex.com");
     }
 
 }
