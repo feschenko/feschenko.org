@@ -20,7 +20,7 @@ function executeCommand() {
         case "telegram":
             return window.open("https://t.me/xxcaq");
         case "habr":
-            return window.open("https://habr.com/users/0susboy");
+            return window.open("https://habr.com/en/users/0susboy0/");
         case "linkedin":
             return window.open("https://linkedin.com/in/fka");
         case "email":
