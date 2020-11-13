@@ -18,7 +18,7 @@ function executeCommand() {
         case "twitter":
             return window.open("https://twitter.com/kiryssha");
         case "telegram":
-            return window.open("https://t.me/xxcaq");
+            return window.open("https://t.me/kirillfeschenko");
         case "habr":
             return window.open("https://habr.com/en/users/0susboy0/");
         case "linkedin":
