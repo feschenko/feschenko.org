@@ -41,7 +41,7 @@ jsgradient = {
     },
 
     generateGradient : function(colorA, colorB, steps){
-        let result = [], rInterval, gInterval, bInterval;
+        let result = [];
 
         colorA = this.hexToRgb(colorA);
         colorB = this.hexToRgb(colorB);
@@ -51,7 +51,7 @@ jsgradient = {
         let gStep = (Math.max(colorA[1], colorB[1]) - Math.min(colorA[1], colorB[1])) / steps;
         let bStep = ( Math.max(colorA[2], colorB[2]) - Math.min(colorA[2], colorB[2]) ) / steps;
 
-        result.push("#"+this.rgbToHex(colorA));
+        result.push("#" + this.rgbToHex(colorA));
 
         let rVal = colorA[0],
             gVal = colorA[1],
@@ -69,9 +69,6 @@ jsgradient = {
         return result;
     }
 }
-
-
-
 
 window.addEventListener("load", function () {
     let background = document.getElementById("body__container");
@@ -91,4 +88,3 @@ window.addEventListener("load", function () {
 
     }, 2500);
 });
-
