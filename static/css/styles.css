@@ -1,50 +1,60 @@
+body {
+    overflow: hidden;
+}
+
 a {
     text-decoration: none;
 }
 
-#loader {
-    width: 100%; height: 100%;
-    position: absolute;
-    top: 0; left: 0;
-    background-color: white;
-    z-index: 99;
-}
+/*h1 {*/
+/*    font-size: 50px;*/
+/*    font-weight: 600;*/
+/*    font-family: "Noto Sans HK", sans-serif;*/
+/*}*/
 
-.loader__logo {
-    position: absolute;
-    top: -15px; bottom: 0;
-    left: 0; right: 0;
-    margin: auto;
-    transition: transform 1ms linear;
-    animation-name: waving;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-}
+/*h2 {*/
+/*    font-size: 40px;*/
+/*    font-weight: 500;*/
+/*    font-family: "Noto Sans HK", sans-serif;*/
+/*}*/
 
-@keyframes waving {
-    0% {transform: rotate(0deg);}
-    25% {transform: rotate(-40deg);}
-    75% {transform: rotate(40deg);}
-    100% {transform: rotate(0deg);}
-}
+/*h3 {*/
+/*    font-size: 35px;*/
+/*    font-weight: 500;*/
+/*    font-family: "Poppins", sans-serif;*/
+/*}*/
 
 #menu__container {
-    width: 100%; height: 35px;
-    position: absolute;
+    width: 100%; height: 30px;
+    position: fixed;
     top: 0; left: 0;
-    background-color: black;
     z-index: 3;
+}
+
+.menu__container-toggle_on {
+    -webkit-transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    -o-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+    background-color: black;
+}
+
+.menu__container-toggle_off {
+    -webkit-transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    -o-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
 }
 
 .menu__container-item {
     border-bottom: 1px solid transparent;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
-    font-size: 13px;
+    font-size: 10px;
     color: white;
     display: inline-block;
     float: right;
-    margin-right: 20px;
+    margin-right: 25px;
     z-index: 4;
 }
 
@@ -56,16 +66,16 @@ a {
     border-bottom: 1px white dashed;
 }
 
-#body__container {
+#introduction__container {
+    -webkit-transition: opacity 1500ms ease-in-out;
+    -moz-transition: opacity 1500ms ease-in-out;
+    -o-transition: opacity 1500ms ease-in-out;
+    transition: opacity 1500ms ease-in-out;
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0; left: 0;
     background: pink;
-    -webkit-transition: opacity 1500ms ease-in-out;
-    -moz-transition: opacity 1500ms ease-in-out;
-    -o-transition: opacity 1500ms ease-in-out;
-    transition: opacity 1500ms ease-in-out;
     z-index: 1;
 }
 
@@ -74,26 +84,29 @@ a {
     100% { top: 500px; }
 }
 
-.container__title {
-    transition: top 2ms linear;
+.introduction__container-title {
+    transition: top 2ms ease-in-out;
+    -webkit-transition: top 2ms ease-in-out;
+    -moz-transition: top 2ms ease-in-out;
+    -o-transition: top 2ms ease-in-out;
     animation-name: switchName;
-    animation-duration: 2s;
-    font-family: "Poppins", sans-serif;
+    animation-duration: 1s;
+    font-family: 'Noto Sans HK', sans-serif;
     font-weight: 600;
     font-size: 50px;
     color: white;
     position: absolute;
     top: 650px;
-    left: 150px;
+    left: 120px;
     z-index: 2;
 }
 
-.container__caption {
+.introduction__container-caption {
     -webkit-transition: all 1500ms ease-in-out;
     -moz-transition: all 1500ms ease-in-out;
     -o-transition: all 1500ms ease-in-out;
     transition: all 1500ms ease-in-out;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Noto Sans HK', sans-serif;
     font-weight: 100;
     font-size: 20px;
     color: white;
@@ -106,3 +119,50 @@ a {
     z-index: 2;
 }
 
+#mouse-scroll_down {
+    -webkit-transition: opacity 1500ms ease-in-out;
+    -moz-transition: opacity 1500ms ease-in-out;
+    -o-transition: opacity 1500ms ease-in-out;
+    transition: opacity 1500ms ease-in-out;
+    width: 30px;
+    height: 50px;
+    border: 3px solid white;
+    border-radius: 15px;
+    position: absolute;
+    top: 850px; right: 50px;
+    opacity: 0;
+    z-index: 2;
+}
+
+@keyframes mouseScrollDown {
+    0% { top: 10px; }
+    100% { top: 20px; }
+}
+
+#mouse-scroll_down-wheel {
+    transition: top 2ms ease-in-out;
+    -webkit-transition: top 2ms ease-in-out;
+    -moz-transition: top 2ms ease-in-out;
+    -o-transition: top 2ms ease-in-out;
+    animation-name: mouseScrollDown;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    width: 5px; height: 11px;
+    background-color: white;
+    border-radius: 25px;
+    position: absolute;
+    top: 10px;
+    left: 0; right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+}
+
+#blog__container {
+    width: 100%;
+    height: 3000px;
+    background-color: green;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
