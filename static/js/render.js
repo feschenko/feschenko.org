@@ -1,18 +1,24 @@
 function iter(current, way) {
     if (way === "next") {
+        let obj = document.getElementsByClassName("introduction__container-caption")[0];
         if (current === 1) {
-            let obj = document.getElementsByClassName("introduction__container-caption")[0];
-            obj.animate([{left: "120px", "opacity": 1}, {left: "300px", opacity: 0 }], {duration: 1000});
+            obj.animate([{left: "120px", "opacity": 1}, {left: "300px", opacity: 0}], {duration: 1000});
             setTimeout(() => obj.style.opacity = "0", 1000);
-        } else if (current === 2) {
-            let obj = document.getElementsByClassName("introduction__container-title")[0];
-            obj.animate([{top: "500px", "opacity": 1}, {top: "0px", opacity: 0}], {duration: 1000})
             setTimeout(function () {
-                window.scrollTo({top: 1200, behavior: "smooth"});
-                document.body.style.overflow = "auto";
-            }, 350);
-            setTimeout(() => obj.style.opacity = "0", 1000);
+                // obj.style.left = "150px";
+                obj.innetText = "Just some cool and blah blah blah blah blah blah info about me and my projects blah blah foo bar.";
+                obj.animate([{left: "0px", "opacity": 0}, {left: "120px", opacity: 1}], {duration: 1000});
+                setTimeout(function (){
+                    obj.style.left = "120px";
+                    obj.style.opacity = "1";
+                }, 200);
+            }, 1300);
+            // } else if (current === 2 ) {
+            //     obj.animate([{left: "-150px", "opacity": 1}, {left: "300px", opacity: 0}], {duration: 1000});
+            //     setTimeout(() => obj.style.opacity = "0", 1000);
+            // }
         }
+    }
 }
 
 window.addEventListener("load", function () {
@@ -60,3 +66,5 @@ setTimeout(function () {
         }
     });
 }, 1000);
+
+
