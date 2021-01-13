@@ -106,7 +106,7 @@ a {
     -moz-transition: all 1500ms ease-in-out;
     -o-transition: all 1500ms ease-in-out;
     transition: all 1500ms ease-in-out;
-    font-family: 'Noto Sans HK', sans-serif;
+    font-family: "Noto Sans HK", sans-serif;
     font-weight: 100;
     font-size: 20px;
     color: white;
@@ -129,14 +129,15 @@ a {
     border: 3px solid white;
     border-radius: 15px;
     position: absolute;
+    overflow: hidden;
     top: 850px; right: 50px;
     opacity: 0;
     z-index: 2;
 }
 
 @keyframes mouseScrollDown {
-    0% { top: 10px; }
-    100% { top: 20px; }
+    0% { top: 10px; opacity: 1; }
+    100% { top: 20px; opacity: 0; }
 }
 
 #mouse-scroll_down-wheel {
@@ -161,8 +162,20 @@ a {
 #blog__container {
     width: 100%;
     height: 3000px;
-    background-color: green;
+    background-color: black;
     position: absolute;
     top: 100%;
     left: 0;
+    z-index: 1;
+}
+
+.blog__container-title {
+    font-family: "Noto Sans HK", sans-serif;
+    font-weight: 800;
+    font-size: 35px;
+    color: white;
+    position: relative;
+    text-align: center;
+    top: 15px;
+    z-index: 2;
 }
