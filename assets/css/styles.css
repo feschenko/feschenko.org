@@ -119,7 +119,7 @@ a {
     z-index: 2;
 }
 
-#mouse-scroll_down {
+#mouse-scroll {
     -webkit-transition: opacity 1500ms ease-in-out;
     -moz-transition: opacity 1500ms ease-in-out;
     -o-transition: opacity 1500ms ease-in-out;
@@ -135,18 +135,19 @@ a {
     z-index: 2;
 }
 
-@keyframes mouseScrollDown {
-    0% { top: 10px; opacity: 1; }
+@keyframes mouseScroll {
+    0% { top: 10px; opacity: 0; }
+    50% { opacity: 1 }
     100% { top: 20px; opacity: 0; }
 }
 
-#mouse-scroll_down-wheel {
+#mouse-scroll__wheel {
     transition: top 2ms ease-in-out;
     -webkit-transition: top 2ms ease-in-out;
     -moz-transition: top 2ms ease-in-out;
     -o-transition: top 2ms ease-in-out;
-    animation-name: mouseScrollDown;
-    animation-duration: 1.2s;
+    animation-name: mouseScroll;
+    animation-duration: 1.7s;
     animation-iteration-count: infinite;
     width: 5px; height: 11px;
     background-color: white;
