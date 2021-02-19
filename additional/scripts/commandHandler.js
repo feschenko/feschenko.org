@@ -14,7 +14,7 @@ function toggleCaret() {
 function executeCommand() {
     switch (command.toLowerCase()) {
         case "github":
-            return window.open("https://github.com/xcaq");
+            return window.open("https://github.com/feschenko");
         case "twitter":
             return window.open("https://twitter.com/kiryssha");
         case "telegram":
