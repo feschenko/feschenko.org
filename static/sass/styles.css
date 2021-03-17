@@ -1,0 +1,147 @@
+body {
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 70px;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 60px;
+}
+
+h3 {
+  font-family: "Noto Sans HK", sans-serif;
+  font-size: 50px;
+}
+
+h4 {
+  font-family: "Noto Sans HK", sans-serif;
+  font-size: 45px;
+}
+
+h5 {
+  font-family: "Noto Sans HK", sans-serif;
+  font-size: 30px;
+}
+
+h6 {
+  font-family: "Noto Sans HK", sans-serif;
+  font-size: 25px;
+}
+
+#introduction__container {
+  -webkit-transition: opacity 1500ms ease-in-out;
+  -moz-transition: opacity 1500ms ease-in-out;
+  -o-transition: opacity 1500ms ease-in-out;
+  transition: opacity 1500ms ease-in-out;
+  background: white;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#introduction__content {
+  z-index: 2;
+  width: 85%;
+  height: 100%;
+  opacity: 1;
+  position: absolute;
+  margin: auto;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+#introduction__text {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.introduction-title {
+  z-index: 3;
+  color: white;
+  position: absolute;
+}
+
+.introduction-caption {
+  z-index: 3;
+  color: white;
+  font-weight: 200;
+  position: absolute;
+  top: 130px;
+}
+
+#scroll__container {
+  -webkit-transition: opacity 1300ms ease-in-out;
+  -moz-transition: opacity 1300ms ease-in-out;
+  -o-transition: opacity 1300ms ease-in-out;
+  transition: opacity 1300ms ease-in-out;
+  width: 60px;
+  height: 90px;
+  border: 4px solid white;
+  border-radius: 25px;
+  position: absolute;
+  overflow: hidden;
+  right: 50px;
+  bottom: 110px;
+  opacity: 1;
+  z-index: 2;
+}
+
+@keyframes scroll {
+  0% {
+    top: 12px;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    top: 25px;
+    opacity: 0;
+  }
+}
+#scroll__container-wheel {
+  transition: top 2ms ease-in-out;
+  -webkit-transition: top 2ms ease-in-out;
+  -moz-transition: top 2ms ease-in-out;
+  -o-transition: top 2ms ease-in-out;
+  animation-name: scroll;
+  animation-iteration-count: infinite;
+  animation-duration: 1.7s;
+  width: 9px;
+  height: 20px;
+  background-color: white;
+  border-radius: 25px;
+  position: absolute;
+  top: 12px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 2;
+}
+
+/*# sourceMappingURL=styles.css.map */

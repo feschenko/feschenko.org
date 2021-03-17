@@ -85,6 +85,5 @@ window.addEventListener("load", function () {
             background.style.opacity = "1";
             background.style.backgroundImage = `linear-gradient(` + degrees + `deg, ` + gradient[0] + ` 20%, `  + gradient[1] + ` 38%, `+ gradient[2] + ` 70%, #fc5036 100%)`;
         }, 750);
-
     }, 3500);
 });
