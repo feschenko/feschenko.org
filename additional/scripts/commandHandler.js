@@ -22,7 +22,7 @@ function executeCommand() {
         case "habr":
             return window.open("https://habr.com/en/users/0susboy0/");
         case "linkedin":
-            return window.open("https://linkedin.com/in/fka");
+            return window.open("https://linkedin.com/in/kirillfeschenko");
         case "email":
             return window.open("mailto:swipduces@yandex.com");
     }
